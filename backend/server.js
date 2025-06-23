@@ -16,19 +16,9 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 let visionClient;
 
-if (process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64) {
-  const decodedKey = Buffer.from(process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64, 'base64').toString('utf-8');
-  const keyPath = './service-account.json';
-  const fs = require('fs');
-  fs.writeFileSync(keyPath, decodedKey);
-
-  visionClient = new ImageAnnotatorClient({
-    keyFilename: keyPath
-  });
-} else {
-  console.error("GOOGLE_APPLICATION_CREDENTIALS_BASE64 env variable not found.");
-  process.exit(1);
-}
+visionClient = new ImageAnnotatorClient({
+  keyFilename: path.join(__dirname, 'mykey.json') // adjust path if needed
+});
 
 
 app.use(cors());
