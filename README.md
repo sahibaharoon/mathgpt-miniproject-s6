@@ -1,13 +1,16 @@
-Excited to share our latest project — MathGPT 
-Built as part of our 6th-semester mini project, MathGPT is a full-stack web app that lets users upload handwritten math problems and get step-by-step solutions instantly using Google Vision API and symbolic computation.
+🧠 MathGPT – AI-Powered Math Problem Solver
 
-💻 Tech Stack: Node.js · Express.js · HTML · CSS · JavaScript · Google Cloud Vision API · Nerdamer · Math.js
-Features:
-* Upload handwritten math questions
-* Auto text recognition and cleaning
-* Clean, fast, and responsive UI
-* Hosted live for easy access anytime!
+A web app that allows users to upload handwritten math problems and get AI-generated step-by-step solutions. Built with Google Vision API, Nerdamer, and Math.js.
 
-Built by: Tag us
+🌐 Live Demo
 
-🔗 https://mathgptproject.onrender.com
+👉 https://mathgptproject.onrender.com
+
+⸻
+
+✨ Features
+	•	📷 Upload handwritten math problems
+	•	🔍 Extracts text using Google Vision API
+	•	🤖 Detects problem type: arithmetic, algebra, calculus (integration/differentiation), limits
+	•	🧮 Solves and returns step-by-step explanations
+	•	💡 Built with Express.js backend & static HTML/CSS frontend
