@@ -16,10 +16,10 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 let visionClient;
 
-visionClient = new ImageAnnotatorClient({
-  keyFilename: path.join(__dirname, 'mykey.json') // adjust path if needed
-});
+const keyBuffer = Buffer.from(process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64, 'base64');
+const keyObject = JSON.parse(keyBuffer.toString());
 
+visionClient = new ImageAnnotatorClient({ credentials: keyObject });
 
 app.use(cors());
 app.use(express.json());
