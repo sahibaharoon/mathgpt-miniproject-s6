@@ -33,6 +33,6 @@ Google Cloud Vision API for OCR
 SymPy (Python) for symbolic computation
 
 💡 Use Cases
-Ideal for students, teachers, and tutors
-Assists in remote learning and self-study
-Converts handwritten notes into solvable digital form
+Ideal for students, teachers, and tutors.
+Assists in remote learning and self-study.
+Converts handwritten notes into solvable digital form.
